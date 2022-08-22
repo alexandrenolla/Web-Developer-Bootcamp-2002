@@ -1,0 +1,15 @@
+section {
+    background-color: blueviolet;
+    width: 80%;
+    height: 1000px;
+    margin: 0 auto;
+    background: center/contain url("https://images.unsplash.com/photo-1593309403363-b79957b1e40d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+    border: 1px solid black;
+    box-shadow: -5px -5px 5px rgba(86, 24, 24, 0.768);
+}
+
+h1 {
+    color: red;
+    text-shadow: 3px 3px 3px white; 
+    margin: 0;
+}

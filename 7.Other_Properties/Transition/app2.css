@@ -1,0 +1,55 @@
+#section1 {
+    background-color: blanchedalmond;
+    transition: background-color 2s;
+    padding: 10px;
+}
+#section1:hover {
+    background-color: blueviolet;
+}
+/*
+#section2 {
+    background-color: coral;
+    transition: background-color 2s;
+    padding: 10px;
+}
+#section2:hover {
+    background-color: cadetblue;
+} */
+div {
+    background-color: blue;
+    height: 200px;
+    width: 200px;
+    margin: 20px;
+}
+#div1 {
+    background-color: blue;
+    transition: margin-left 4s, border-radius 4s, background-color 4s; 
+} 
+#div1:hover {
+    margin-left: 1050px;
+    border-radius: 50%;
+    background-color: aquamarine;
+}
+
+#div2 {
+    background-color: yellow;
+    transition: background-color 4s, width 4s, height 4s, margin-left 4s, transform 4s;
+}
+#div2:hover {
+    background-color: brown;
+    width: 400px;
+    height: 400px;
+    margin-left: 600px;
+    transform: rotate(360deg);
+}
+
+#div3 {
+    background-color: cadetblue;
+    transition: opacity 4s, width 4s, height 4s, transform 4s;
+}
+#div3:active {
+    opacity: 0.3;
+    width: 80px;
+    height: 80px;
+    transform: skew(90deg) translate(150px);
+}

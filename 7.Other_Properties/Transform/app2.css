@@ -1,0 +1,54 @@
+h1 {
+    width: 300px;
+    background-color: rgb(140, 92, 243);
+    text-align: center;
+    padding: 0.7em;
+    border: 3px solid black;
+    box-sizing: border-box;
+    font-family: monospace;
+    font-weight: lighter;
+    margin: 20px auto;
+}
+h1:nth-of-type(2n) {
+    background-color: chocolate;
+}
+h1:nth-of-type(3n) {
+    background-color: aqua;
+}
+h1:nth-of-type(4n) {
+    background-color: goldenrod;
+}
+
+section:first-of-type h1:nth-of-type(1) { 
+    transform: rotate(140deg);
+}
+section:first-of-type h1:nth-of-type(2) {
+    transform: translateY(400px) translateX(150px);
+}
+section:first-of-type h1:nth-of-type(3) {
+    transform: scale(1.8);
+} 
+section:first-of-type h1:nth-of-type(4) {
+    transform: scale3d(1.5, 1.5, 1);  
+} 
+
+section:nth-of-type(2) h1:nth-of-type(1) {
+    transform: skew(40deg, 20deg);
+}
+section:nth-of-type(2) h1:nth-of-type(2) {
+    transform: rotate(90deg) translate(90px);
+} 
+section:nth-of-type(2) h1:nth-of-type(3) {
+    transition: margin-top 4s, transform 4s;
+}
+section:nth-of-type(2) h1:nth-of-type(3):hover {
+    margin-top: 100px;
+    transform: rotate(180deg);
+}  
+section:nth-of-type(2) h1:nth-of-type(4) {
+    transition: margin-bottom 4s, transform 4s;
+}
+section:nth-of-type(2) h1:nth-of-type(4):hover {
+    margin-bottom: 100px;
+    transform: rotate(-180deg);
+}  

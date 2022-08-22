@@ -3,16 +3,16 @@ section {
     height: 500px;
     background-color: magenta;
 }
-
+/* Alpha channel let just the background-color transparent and nothing else */
 #rgba {
     width: 50%;
     height: 50%;
-    background-color: rgba(255,255,255,0.7)
+    background-color: rgba(255,255,255,0.4)
 }
-
+/* Opacity attribute let all content inside of the element transparent.*/
 #opacity {
     width: 50%;
     height: 50%;
     background-color: yellow;
-    opacity: 0.3;
+    opacity: 0.4;
 }
