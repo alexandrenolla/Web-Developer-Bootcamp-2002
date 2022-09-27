@@ -48,11 +48,23 @@ while(parseInt(guess) !== result)
         guess = prompt('Invalid number. Try again')
     }
 }
-
-if(guess === 'q') {
-    alert(`You quit after ${attempts} guesses. LOSER!`)
-} else {
-    alert(`You Win! It took you ${attempts} guesses.`);
-}
+//Printing the correctly number of attempts after quitting.
+if(guess === 'q') {   
+    if(attempts <= 1) 
+    {
+        alert(`You quit after ${attempts} guess. LOSER!`)
+    } else {
+            alert(`You quit after ${attempts} guesses. LOSER!`)
+        }    
+} else {   //Printing the correctly number of attempts after winning.
+    if(attempts <= 1) 
+    {
+        alert(`You Win! It took you ${attempts} guess.`);
+    } else {
+            alert(`You Win! It took you ${attempts} guesses.`);
+        }
+    }
+   
+    
 
 
